@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the book list */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+/* Header Styles */
+h1 {
+    color: #333; /* Dark color for the header */
+    margin-bottom: 20px;
+}
+
+/* Link Styles */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #e7f3ff; /* Light background for links */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background: #007bff; /* Darker background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Unordered List Styles */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+/* List Item Styles */
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Light border for separation */
+    display: flex;
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center vertically */
+}
+
+li:last-child {
+    border-bottom: none; /* Remove border for last item */
+}
+
+/* Edit/Delete Links */
+li a {
+    margin-left: 10px; /* Add space between Edit and Delete */
+    color: #dc3545; /* Danger color for delete */
+}
+
+li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

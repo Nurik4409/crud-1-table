@@ -1,11 +1,27 @@
-<h1>Book List</h1>
-<a href="{% url 'book_create' %}">Add New Book</a>
-<ul>
-    {% for book in books %}
-        <li>
-            {{ book.title }} by {{ book.author }}
-            <a href="{% url 'book_update' book.pk %}">Edit</a>
-            <a href="{% url 'book_delete' book.pk %}">Delete</a>
-        </li>
-    {% endfor %}
-</ul>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/book_list.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Book List</h1>
+        <a href="{% url 'book_create' %}">Add New Book</a>
+        <ul>
+            {% for book in books %}
+                <li>
+                    {{ book.title }} by {{ book.author }}
+                    <span>
+                        <a href="{% url 'book_update' book.pk %}">Edit</a>
+                        <a href="{% url 'book_delete' book.pk %}">Delete</a>
+                    </span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

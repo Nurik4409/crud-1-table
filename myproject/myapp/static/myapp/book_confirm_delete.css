@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the delete confirmation */
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+/* Header Styles */
+h1 {
+    color: #dc3545; /* Danger color for the header */
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 18px;
+    color: #555; /* Darker text color */
+    margin-bottom: 30px; /* Space below paragraph */
+}
+
+/* Button Styles */
+button {
+    background-color: #dc3545; /* Danger color */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}
+
+/* Link Styles */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
